@@ -1,15 +1,3 @@
-/*
-
-				" A program in which you pick a word in your mind and you choose the columns in which 
-			the letters of the name falls in and the program finds the word you have picked "
-			
-*/
-
-
-
-//AUTHOR: Rahimullah 
-//CMS ID:342563
-
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
@@ -52,7 +40,7 @@
 			printf("\t\t%2d  ",i); 
 			
 			
-			for(j=0;j<n;j++){
+			for(j=1;j<=n;j++){
 				
 				if(i==0){
 					printf("%5d",j); // gives numbering to column
@@ -93,12 +81,10 @@
 				printf("\n\n");
 				}
 			printf("\t\t");
-	for(j=0;1;j++){
+	for(j=0;j<rows_count;j++){
 	
-		if(array[j][c]<91 && array[j][c]>64)
+		if(array[j][c]!=NULL)
 		printf(" %4c",array[j][c]);
-		if(array[j][c]>91)
-		break;
 	}
 	printf("\n\n\n");
 }
